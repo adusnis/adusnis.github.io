@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Meet Mony</title>
+    <style>
+      body {
+        background-color: rgb(112, 86, 196);
+        text-align: center;
+      }
+      h1 {
+        font-size: 3em;
+        color: white;
+        text-shadow: 2px 2px #ff69b4;
+      }
+      p {
+        font-size: 1.5em;
+        color: white;
+        text-shadow: 2px 2px #ff69b4;
+      }
+      .box {
+        border: 2px solid white;
+        border-radius: 10px;
+        background-color: pink;
+        width: auto;
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        padding: 10px;
+        box-shadow: 3px 3px rgb(255, 0, 0), -3px -3px rgb(0, 217, 255);
+      }
+      .box:hover{
+        box-shadow: 3px 3px rgb(255, 0, 0), -3px -3px rgb(0, 217, 255), 0px 0px 30px white;
+        cursor: pointer;
+      }
+      .box:active{
+        box-shadow: 3px 3px rgb(255, 0, 0), -3px -3px rgb(0, 217, 255), 0px 0px 30px white;
+        transform: translate(-50%, -50%) scale(0.9);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="box" contenteditable="true">
+        <h1>Mony</h1>
+    </div>
+    </body>
+</html>
