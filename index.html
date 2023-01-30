@@ -3,6 +3,9 @@
   <head>
     <title>Meet Mony</title>
     <style>
+      a{
+        text-decoration: none;
+      }
       body {
         background-color: rgb(112, 86, 196);
         text-align: center;
@@ -13,21 +16,27 @@
         text-shadow: 2px 2px #ff69b4;
       }
       p {
-        font-size: 1.5em;
+        font-size: 1em;
         color: white;
-        text-shadow: 2px 2px #ff69b4;
+        font-style: italic;
       }
-      .box {
-        border: 2px solid white;
-        border-radius: 10px;
-        background-color: pink;
-        width: auto;
+      .center{
         position: fixed;
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);
         padding: 10px;
         box-shadow: 3px 3px rgb(255, 0, 0), -3px -3px rgb(0, 217, 255);
+      }
+      .box {
+        border: 2px solid white;
+        border-radius: 10px;
+        background-color: pink;
+        width: auto;
+        position: relative;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 80vw;
       }
       .box:hover{
         box-shadow: 3px 3px rgb(255, 0, 0), -3px -3px rgb(0, 217, 255), 0px 0px 30px white;
@@ -40,8 +49,11 @@
     </style>
   </head>
   <body>
-    <div class="box" contenteditable="true">
+    <div class="center">
+      <a href="https://www.youtube.com/watch?v=QH2-TGUlwu4"><div class="box">
         <h1>Mony</h1>
+      </a></div>
+      <p>เหตุผลที่ฉันต้องอยู่บนโลกใบนี้ก็เพราะยังออกไปนอกโลกไม่ได้</p>
     </div>
     </body>
 </html>
